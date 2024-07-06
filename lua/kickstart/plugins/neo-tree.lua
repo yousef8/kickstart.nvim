@@ -15,9 +15,23 @@ return {
   },
   opts = {
     filesystem = {
+      hijack_netrw_behavior = 'open_current',
       window = {
         mappings = {
           ['\\'] = 'close_window',
+        },
+      },
+      filtered_items = {
+        visible = true,
+      },
+    },
+    default_component_configs = {
+      diagnostics = {
+        symbols = {
+          hint = '󰌵',
+          info = '',
+          warn = '',
+          error = '',
         },
       },
     },
